@@ -17,7 +17,7 @@
       <p><a class="btn btn-primary btn-lg" href="App/scrape.py" role="button">Scrapeing Data</a></p>
     </div>
 
-    <!-- Mars News -->
+    
     <div class="row" id="mars-news">
       <div class="col-md-12">
         <div class="media">
@@ -30,19 +30,16 @@
       </div>
     </div>
 
-    <!-- Mars Featured Image -->
     <div class="row" id="mars-featured-image">
       <div class="col-md-8">
         <h2>Images</h2>
 
-          <!-- if images is False/None/non-existent, then default to error message -->
           <img src="{{mars.featured_image | default('https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AGeneric_error_message.png&psig=AOvVaw3tN1Sck2POIaLCI9rlSguM&ust=1587659954588000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOD2_7K8_OgCFQAAAAAdAAAAABAD', true) }}" class="img-responsive"
           alt="Responsive image">
       </div>
 
       <div class="col-md-4">
 
-        <!-- Mars Weather -->
         <div class="row" id="mars-weather">
           <div class="col-md-12">
 
@@ -57,7 +54,6 @@
           </div>
         </div>
 
-        <!-- Mars Facts -->
         <div class="row" id="mars-facts">
           <div class="col-md-12">
             <h4>Facts about mars</h4>
@@ -70,7 +66,6 @@
 
 
 
-    <!-- Mars Hemispheres -->
     <div class="row" id="mars-hemispheres" style="margin-top:80px;">
 
       <div class="page-header">
@@ -82,7 +77,6 @@
         <div class="col-md-6">
             <div class="thumbnail">
 
-            <!-- if images is False/None/non-existent, then default to error message -->
             <img src="{{hemisphere.img_url | default('https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AGeneric_error_message.png&psig=AOvVaw3tN1Sck2POIaLCI9rlSguM&ust=1587659954588000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOD2_7K8_OgCFQAAAAAdAAAAABAD', true)}}"
                 alt="...">
             <div class="caption">
